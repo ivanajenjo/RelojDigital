@@ -18,33 +18,33 @@ public class RelojDigital {
 		case "Domingo":
 			break;
 		default:
-			System.out.println("Introduzca un dia válido");
+			System.out.println("Introduzca un dia vÃ¡lido");
 			sc.close();
 			return;
 		}
 		System.out.println("Introduzca la hora");
 		int hora = sc.nextInt();
 		if(hora < 0 || hora > 23) {
-			System.out.println("Introduzca una hora válida");
+			System.out.println("Introduzca una hora vÃ¡lida");
 			sc.close();
 			return;
 		}
 		System.out.println("Introduzca los minutos");
 		int min = sc.nextInt();
 		if(min < 0 || min > 59) {
-			System.out.println("Introduzca un minuto válido");
+			System.out.println("Introduzca un minuto vÃ¡lido");
 			sc.close();
 			return;
 		}
 		System.out.println("Introduzca los segundos");
 		int sec = sc.nextInt();
 		if (sec < 0 || sec > 59) {
-			System.out.println("Introduzca un segundo válido");
+			System.out.println("Introduzca un segundo vÃ¡lido");
 			sc.close();
 			return;
 		}
 		
-		System.out.println("Hora introducida " + dia + " " + hora + " " + min + " " + sec);
+		System.out.println("Hora introducida " + dia + " " + hora + ":" + min + ":" + sec);
 		
 		for (int i = 0; i < 150; i++) {
 			sec++;
